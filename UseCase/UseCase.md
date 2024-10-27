@@ -25,7 +25,7 @@ UseCases:
 Администратор --> входит в систему
 Администратор --> проверяет заявления
 
-![image](https://github.com/user-attachments/assets/45933584-902f-4d85-b02d-98b5a2d99bd9)
+![image](https://github.com/user-attachments/assets/387931ac-ef5b-49f7-ac39-40d86f99d670)
 
 
 
