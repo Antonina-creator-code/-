@@ -1,5 +1,5 @@
 # Описание ER диаграммы
-![image](https://github.com/user-attachments/assets/2d8f2797-0618-45c5-8301-68d385bc7c8f)
+![image](https://github.com/user-attachments/assets/6cd23293-9e64-4dc0-a0cd-80e308087fac)
 
 ### Сущности:
 
