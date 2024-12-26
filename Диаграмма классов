@@ -1,46 +1,46 @@
-▎1. Перечисления (Enumerations)
+### Enumerations
 
-• RoleName: Определяет роли пользователей, такие как "Иностранный гражданин", "Специалист УМВД", "Специалист ФГУП «ПВС»", "Администратор".
+- RoleName: Определяет роли пользователей, такие как "Иностранный гражданин", "Специалист УМВД", "Специалист ФГУП «ПВС»", "Администратор".
 
-• ApplicationStatus: Статусы заявок на патент, например, "На рассмотрении", "Одобрена", "Отклонена", "Выдана".
+- ApplicationStatus: Статусы заявок на патент, например, "На рассмотрении", "Одобрена", "Отклонена", "Выдана".
 
-• DocumentType: Типы документов, необходимые для получения патента, такие как "Сертификат о знании языка", "Выписка из банка", "Фотография", "ИНН".
+- DocumentType: Типы документов, необходимые для получения патента, такие как "Сертификат о знании языка", "Выписка из банка", "Фотография", "ИНН".
 
-• PaymentStatus: Статусы платежей, например, "Оплачен", "Неоплачен".
+- PaymentStatus: Статусы платежей, например, "Оплачен", "Неоплачен".
 
-▎2. Модели (Models)
+### Models
 
-• UserModel: Базовая модель для всех пользователей системы.
+## UserModel: Базовая модель для всех пользователей системы.
 
   • Атрибуты: id, email, password, fullName, role.
 
-• ForeignCitizenModel: Модель для иностранных граждан, желающих получить патент.
+## ForeignCitizenModel: Модель для иностранных граждан, желающих получить патент.
 
   • Атрибуты: passportData, applicationList, languageCertificate, inn.
 
-• ApplicationModel: Модель заявки на получение патента.
+## ApplicationModel: Модель заявки на получение патента.
 
   • Атрибуты: id, status, submissionDate, foreignCitizenId, documentList, paymentStatus.
 
-• DocumentModel: Модель документа, прикрепленного к заявке.
+## DocumentModel: Модель документа, прикрепленного к заявке.
 
   • Атрибуты: id, documentType, link, isRequired.
 
-• PaymentModel: Модель платежа за патент.
+## PaymentModel: Модель платежа за патент.
 
   • Атрибуты: id, amount, date, status.
 
-• LanguageCertificateModel: Модель сертификата о знании русского языка.
+## LanguageCertificateModel: Модель сертификата о знании русского языка.
 
   • Атрибуты: id, issueDate, validityPeriod, foreignCitizenId.
 
-▎3. Модели представления (ViewModels)
+### ViewModels
 
-• LoginViewModel: Управляет процессом авторизации.
+## LoginViewModel: Управляет процессом авторизации.
 
   • Атрибуты: userList.
 
-• ApplicationViewModel: Управление процессом подачи заявки на патент.
+## ApplicationViewModel: Управление процессом подачи заявки на патент.
 
   • Методы: submitApplication(), uploadDocument(), checkStatus().
 
